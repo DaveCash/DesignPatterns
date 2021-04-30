@@ -1,15 +1,15 @@
 ﻿using DesignPatterns.Decorator.Commands;
+using MassTransitTest.Commands;
 using System;
+using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            DecoratorTestCommand.Run();
-
-            Console.ReadLine();
+            await MassTransitTestCommand.RunAsync();
         }
     }
 }
